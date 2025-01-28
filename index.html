@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 
     <style>
       @font-face {
@@ -41,9 +42,11 @@
           height: 100%;
           object-fit: cover;
         }
-      /* @media (min-width :768px) {
-            
-        } */
+      @media (min-width :768px) {
+            .material-symbols-outlined{
+                display: none !important;
+            }
+        }
       /* pos {
             bottom: -20px;
          } */
@@ -52,12 +55,13 @@
   <body>
     <header class="px-5 md:px-48 bg-white py-6">
       <nav class="px-4 bg-[#a2d6f9] rounded-md py-4 flex justify-between items-center">
-        <ul class="flex">
+        <ul class="hidden md:flex">
           <li class="px-3 text-white px-3 py-1 rounded-sm hover:bg-sky-500">خانه</li>
           <li class="px-3 text-white px-3 py-1 rounded-sm hover:bg-sky-500">درباره ما</li>
           <li class="px-3 text-white px-3 py-1 rounded-sm hover:bg-sky-500">تماس با ما</li>
           <li class="px-3 text-white px-3 py-1 rounded-sm hover:bg-sky-500">مقالات</li>
         </ul>
+        <span class="material-symbols-outlined text-white inline md:hidden"> menu </span>
 
         <div>
             <button class="bg-sky-500 text-white rounded-sm px-3 py-1">ورود بیمار</button>
