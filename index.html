@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      @font-face {
+        font-family: "vazir";
+        src: url("assets/fonts/Vazir-Medium.ttf");
+      }
+      * {
+        font-family: "vazir";
+      }
+
+      .myshadow {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+
+      swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+    
+        swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /*background-color : yellow;*/
+          padding : 0 10px;
+        }
+    
+        swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      /* @media (min-width :768px) {
+            
+        } */
+      /* pos {
+            bottom: -20px;
+         } */
+    </style>
+  </head>
+  <body>
+    <header class="px-5 md:px-48 bg-white py-6">
+      <nav class="px-4 bg-[#a2d6f9] rounded-md py-4 flex justify-between items-center">
+        <ul class="flex">
+          <li class="px-3 text-white px-3 py-1 rounded-sm hover:bg-sky-500">خانه</li>
+          <li class="px-3 text-white px-3 py-1 rounded-sm hover:bg-sky-500">درباره ما</li>
+          <li class="px-3 text-white px-3 py-1 rounded-sm hover:bg-sky-500">تماس با ما</li>
+          <li class="px-3 text-white px-3 py-1 rounded-sm hover:bg-sky-500">مقالات</li>
+        </ul>
+
+        <div>
+            <button class="bg-sky-500 text-white rounded-sm px-3 py-1">ورود بیمار</button>
+            <button class="bg-sky-500 text-white rounded-sm px-3 py-1 ms-3">ورود پزشک</button>
+        </div>
+
+      </nav>
+    </header>
+
+    <main class="px-5 md:px-48">
+      <!-- slider  -->
+        <swiper-container class="mySwiper d-block d-md-none my-4" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="1">
+            <swiper-slide>
+                <img class="rounded-md" src="assets/9.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="rounded-md" src="assets/8.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="rounded-md" src="assets/1.jpg" alt="">
+            </swiper-slide>
+        </swiper-container>
+      <!-- doctors  -->
+      <!-- clinics  -->
+       <h2 class="text-center text-2xl py-4 text-[#0077b6]">کلینیک ها و خدمات</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-9">
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img
+            class="rounded-md border-1 border-[#ccc]"
+            src="assets/1.jpg"
+            alt=""
+          />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img class="rounded-md" src="assets/2.jpg" alt="" />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img class="rounded-md" src="assets/3.jpg" alt="" />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img class="rounded-md" src="assets/4.jpg" alt="" />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img class="rounded-md" src="assets/5.jpg" alt="" />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img class="rounded-md" src="assets/6.jpg" alt="" />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img class="rounded-md" src="assets/7.jpg" alt="" />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img class="rounded-md" src="assets/8.jpg" alt="" />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border border-[#dee2e6] relative rounded-md myshadow px-4 py-8"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <img class="rounded-md" src="assets/9.jpg" alt="" />
+          <div
+            class="flex justify-center pos absolute w-full inset-x-0 -bottom-7"
+          >
+            <div
+              class="bg-[#a2d6f9] rounded-sm w-2/3 md:w-1/2 text-center py-4 text-white"
+            >
+              کلینیک سلامت جنسی
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
